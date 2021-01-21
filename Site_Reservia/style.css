@@ -1,11 +1,16 @@
 .populaire {
     background-color: #F2F2F2;
+    float: right;
 }
 
 .hebergement{
     background-color: #F2F2F2;
 }
+
 #inscrire {
-    color: #0065FC;
-    
+    color: #0065FC; 
+}
+
+.activite {
+    clear: both;
 }
