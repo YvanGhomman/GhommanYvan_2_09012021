@@ -17,3 +17,21 @@ body {
 .activite {
     clear: both;
 }
+.filtre{
+    display: flex;
+    align-items: center;
+    border: solid #F2F2F2 1px;
+    border-radius: 50px;
+    width:fit-content;
+    margin: 12px;
+    padding: 0 20px 0 0;
+    
+}
+.icone{
+    background-color: #DEEBFF;
+    padding: 12px;
+    border-radius: 50px ;    
+    font-size: small;
+    color: #0065FC;
+    margin-right: 10px;
+}
