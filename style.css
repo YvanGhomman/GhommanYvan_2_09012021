@@ -13,9 +13,23 @@ flex: 1;
 .recherche {
     align-items: center;
     display: flex;
-    border: solid  #F2F2F2 1px;
-    border-radius: 20px / 10px;
+    border: solid  #921313 1px;
+    border-radius: 10px 10px;
     width: fit-content;
+}
+input{
+    border: hidden;
+}
+.bouton{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 1em;
+}
+.mapmarker{
+    background-color: #F2F2F2;
+    padding: 0.8em;
+    border-radius: 10px 0 0 10px;
 }
 
 .hebergement{

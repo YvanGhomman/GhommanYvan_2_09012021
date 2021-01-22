@@ -25,14 +25,13 @@
             </div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-
             <div class="recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <!--Integrer barre recherche-->
-                <p>Marseille, France</p>
-                <p>Rechercher</p>
+                <form action="post" action="traitement.php">
+                        <i class="fas fa-map-marker-alt mapmarker"></i>
+                        <input type="search" name="lieu" id="lieu" value="Marseille, France">
+                        <input class="bouton" type="submit" value="Rechercher">
+                </form>
             </div>
-
             <h3>Filtres</h3>
 
             <p class="filtre"><i class="fas fa-money-bill-wave icone"></i>Économique</p>
