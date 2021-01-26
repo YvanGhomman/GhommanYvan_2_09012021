@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
-    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 header, aside, .hebergement {
     margin :0 2em 2em 2em
@@ -41,16 +42,27 @@ header, aside, .hebergement {
         display: flex;
         border: solid  #F2F2F2 1px;
         border-radius: 10px 10px;
-        width: fit-content;
+        width: 20%;
+    }
+    .zonerecherche{
+        width: 100%;
+        display: flex;
     }
     input{
         border: hidden;
+    }
+    #lieu{
+        width: 100%;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 1.5em ;
     }
     .bouton{
         background-color: #0065FC;
         color: white;
         border-radius: 0 10px 10px 0;
         padding: 1em;
+        width: 40%;
     }
     .mapmarker{
         background-color: #F2F2F2;
@@ -69,14 +81,17 @@ header, aside, .hebergement {
         width:fit-content;
         margin: 15px;
         padding: 0 20px 0 0;
+        font-size: 18px;
+        font-weight: bold; 
     }
     .icone{
         background-color: #DEEBFF;
         padding: 12px;
-        border-radius: 50px ;    
-        font-size: small;
+        border-radius: 50px ;
         color: #0065FC;
         margin-right: 10px;
+        width: 1em;
+        height: 1em;
     }
     .filtres{
         display: flex;
@@ -102,7 +117,13 @@ header, aside, .hebergement {
         flex-direction: row-reverse;
         justify-content: space-between;
         }
-
+    
+    .etoile{
+        color: #0065FC;
+    }
+    .noetoile{
+        color: #F2F2F2;
+    }
     .populaire {
         background-color: #F2F2F2;
         border-radius: 25px;
@@ -185,13 +206,16 @@ header, aside, .hebergement {
         padding: 0.5em 1em;
     }
     h4{
-        font-size: 21px;
+        font-size: 17px;
         padding: 0;
         margin: 0;
     }
     .text_heber p{
         padding: 0.5em 0;
         margin: 0;
+    }
+    span{
+        font-weight: bold;
     }
     #afficher{
         padding-left: 1em;
@@ -270,7 +294,16 @@ header, aside, .hebergement {
 
 /*FOOTER*/
 
-.footer {
+footer {
     background-color: #F2F2F2;
+    display: flex;
+    padding: 2em;
+    margin-top: 2%;
+}
+.boxfoot{
+    margin-right: 15%;
+}
+.boxfoot p{
+    width: 15em;
 }
 
