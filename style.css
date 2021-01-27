@@ -42,11 +42,12 @@ header, aside, .hebergement {
         display: flex;
         border: solid  #F2F2F2 1px;
         border-radius: 10px 10px;
-        width: 20%;
+        width: fit-content;
     }
     .zonerecherche{
         width: 100%;
         display: flex;
+        align-items: center;
     }
     input{
         border: hidden;
@@ -64,15 +65,26 @@ header, aside, .hebergement {
         padding: 1em;
         width: 40%;
     }
+    .boutonloupe{
+        display: none;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 20px;
+        padding: 1em;
+        width: 4em;
+        height: 3.5em;
+    }
     .mapmarker{
         background-color: #F2F2F2;
-        padding: 0.8em;
+        padding: 1em;
         border-radius: 10px 0 0 10px;
+        height: fit-content;
     }
 
     .filtres{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     #motfiltres{
         margin-right: 15px;
@@ -113,6 +125,13 @@ header, aside, .hebergement {
         margin-right: 5px;
         text-align: center;
     }
+    #info-text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
 
 
 /*POPULAIRE (ET HEBERGEMENT)*/
@@ -242,6 +261,7 @@ header, aside, .hebergement {
     .toutactivites {
         display: flex;
         justify-content: center;
+        justify-items: center;
     }
     .dispo1{
         display: flex;
@@ -258,7 +278,7 @@ header, aside, .hebergement {
         border-radius: 25px;
         box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
         margin: 2em;
-        width: 50%;
+        width: 45%;
     }
     .boitesact2{
         background-color: white;
@@ -315,5 +335,95 @@ footer {
 }
 .boxfoot p{
     width: 15em;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        padding-left: 2.5em;
+    }
+
+    .toutactivites {
+        flex-direction: column;;
+    }
+    .dispo1, .dispo2, .boitesact1{  
+        width: fit-content;
+    }
+    .toutactivites img{
+        height: 200px;
+    }
+    .toutactivites h4{
+        font-size: 23px;
+    }
+    .activ h2{
+        font-size: 35px;
+    }
+    #actités{
+        margin-left: 0em;
+    }
+
+    #popheber {
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .lespluspop h2, .lespluspop i{
+        font-size: 35px;
+        padding-bottom: 1em;
+    }
+    h4{
+        font-size: 23px;
+    }
+    .populaire {
+        border-radius: 0px;
+        margin: 0em;
+    }
+
+    .hebergement h2{
+        font-size: 35px;
+    }
+    .hebergement{
+        background-color: white;
+        border-radius: 0px;
+        margin: 0em;
+    }
+    #hébergements{
+        padding-left: 0;
+        padding-bottom: 1em;
+    }
+    #afficher{
+        font-size: 25px;
+    }
+    .ligne{
+        flex-direction: column;
+        width: fit-content;
+    }
+    .boite_heber{
+        width: fit-content;
+        margin: 0 0 40px 0
+    }
+
+    .soustext{
+        font-size: 20px;
+    }
+    .recherche {
+        width: 100%;
+        height: 50px;
+    }
+    .boutonloupe{
+        display: block;
+    }
+    .bouton{
+        display: none;
+    }
+    .mapmarker{
+        height: 1.2em;
+    }
+    #lieu{
+        font-size: 23px;
+    }
+
+
+
+
 }
 
