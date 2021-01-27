@@ -24,13 +24,19 @@ header, aside, .hebergement {
     .navig{
         color: black;
         text-decoration: none;
-        padding: 1.5em 2em 2em 2em;
+        padding: 2.5em 2em 2em 2em;
     }
     .navig:hover {
         border-top: 3px solid #0065FC;
         color: #0065FC;  
     }
     ul{
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        list-style-type: none;
+    }
+    nav{
         display: flex;
         align-items: center;
         padding: 0.7em;
@@ -277,14 +283,14 @@ header, aside, .hebergement {
         background-color: white;
         border-radius: 25px;
         box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
-        margin: 2em;
+        margin: 1em;
         width: 45%;
     }
     .boitesact2{
         background-color: white;
         border-radius: 25px;
         box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
-        margin: 2em;
+        margin: 1em;
         width: fit-content;
     }
     .boitesact1 h4, .boitesact2 h4{
@@ -337,7 +343,7 @@ footer {
     width: 15em;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
     footer{
         flex-direction: column;
         padding-left: 2.5em;
@@ -350,36 +356,42 @@ footer {
         width: fit-content;
     }
     .toutactivites img{
-        height: 200px;
+        height: 100px;
     }
     .toutactivites h4{
-        font-size: 23px;
+        font-size: 12px;
     }
     .activ h2{
-        font-size: 35px;
+        font-size: 20px;
     }
-    #actités{
-        margin-left: 0em;
+    #activités{
+        margin-left: 1em;
     }
+
 
     #popheber {
         flex-direction: column;
-        font-size: 20px;
+        font-size: 10px;
     }
     .lespluspop h2, .lespluspop i{
-        font-size: 35px;
+        font-size: 20px;
         padding-bottom: 1em;
     }
     h4{
-        font-size: 23px;
+        font-size: 12px;
     }
     .populaire {
         border-radius: 0px;
         margin: 0em;
     }
+    .boitepop{
+        margin: 0 0 2em 0;
+    }
+
+    
 
     .hebergement h2{
-        font-size: 35px;
+        font-size: 20px;
     }
     .hebergement{
         background-color: white;
@@ -391,7 +403,7 @@ footer {
         padding-bottom: 1em;
     }
     #afficher{
-        font-size: 25px;
+        font-size: 12px;
     }
     .ligne{
         flex-direction: column;
@@ -399,11 +411,11 @@ footer {
     }
     .boite_heber{
         width: fit-content;
-        margin: 0 0 40px 0
+        margin: 0 0 20px 0
     }
 
     .soustext{
-        font-size: 20px;
+        font-size: 12px;
     }
     .recherche {
         width: 100%;
@@ -419,8 +431,48 @@ footer {
         height: 1.2em;
     }
     #lieu{
-        font-size: 23px;
+        font-size: 13px;
     }
+
+
+
+    .entete{
+        position: relative;
+        display: block;
+        margin: 0 -2em;
+        border-bottom: 3px solid #DEEBFF;
+    }
+    .entete img{
+        margin: 0 1em;
+    }
+    #inscrire {
+        position :absolute;
+        right: 5px;
+        top: 0.5em;
+        padding: 0;
+        font-size: 15px;
+        margin: 0.5em 1em;
+    }
+    .navig:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: 0;
+    }
+    ul{
+        padding: 0.7em;
+        font-size: 15px;
+        margin: 2em 0em;
+        padding: 0;
+        }
+    nav{
+        text-align: center;
+        justify-content: center;
+        padding: 0em;
+    }
+    .navig{
+        border-bottom: 3px solid #DEEBFF;
+        border-top: 0;
+    }
+
 
 
 
