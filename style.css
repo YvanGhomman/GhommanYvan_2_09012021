@@ -111,7 +111,6 @@ header, aside, .hebergement {
         width:fit-content;
         margin: 15px;
         padding: 0 20px 0 0;
-        font-size: 13px;
         font-weight: bold; 
     }
     .filtre:hover{
@@ -120,7 +119,7 @@ header, aside, .hebergement {
     }
     .icone{
         background-color: #DEEBFF;
-        padding: 12px;
+        padding: 12px 12px 12px 10px;
         border-radius: 50px ;
         color: #0065FC;
         margin-right: 10px;
@@ -142,7 +141,7 @@ header, aside, .hebergement {
     #info-text{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
     }
     .soustext {
         font-size: 14px;
@@ -158,6 +157,7 @@ header, aside, .hebergement {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin-left: 1em;
         }
 
     .liensglobaux{
@@ -305,45 +305,60 @@ header, aside, .hebergement {
         box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
         margin: 1em;
         width: 45%;
+
     }
     .boitesact2{
         background-color: white;
         border-radius: 25px;
         box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
         margin: 1em;
-        width: fit-content;
+
     }
-    .boitesact1 h4, .boitesact2 h4{
+    .boitesact3{
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
+        margin: 1em;
+
+    }
+    .boitesact4{
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
+        margin: 1em;
+
+    }
+    .boitesact1 h4, .boitesact2 h4, .boitesact3 h4, .boitesact4 h4{
         padding: 1em;
     }
     .img1{
         border-radius: 25px 25px 0 0 ;
         width: 100%;
-        height: 500px;
+        height: 340px;
         object-fit: cover;
     }
     .imgfort{
         border-radius: 25px 25px 0 0 ;
         width: 100%;
-        height: 250px;
+        height: 160px;
         object-fit: cover;
     }
     .imgiles{
         border-radius: 25px 25px 0 0 ;
         width: 100%;
-        height: 150px;
+        height: 100px;
         object-fit: cover;
     }
     .imgnotre{
         border-radius: 25px 25px 0 0 ;
         width: 100%;
-        height: 200px;
+        height: 130px;
         object-fit: cover;
     }
     .imgparc{
         border-radius: 25px 25px 0 0 ;
         width: 100%;
-        height: 200px;
+        height: 130px;
         object-fit: cover;
     }
 
@@ -360,11 +375,18 @@ h3{
     font-size: 17px;
 }
 .boxfoot{
-    margin-right: 5%;
+    margin: 3%;
 }
 .boxfoot p{
     width: 15em;
     font-size: 14px;
+}
+.liensaffich{
+    text-decoration: none;
+    color: black;
+}
+.liensaffich:hover{
+    color: #0065FC;
 }
 
 
@@ -472,6 +494,10 @@ h3{
     }
     .boitepop{
         margin: 0 0 2em 0;
+        height: 150px;
+    }
+    .imagepop{
+        height: 150px;
     }
 
     .hebergement h2{
@@ -530,6 +556,9 @@ h3{
 
 }
 
+
+/*TABLETTE PAYSAGE & LAPTOP*/
+
 @media all and (min-width:769px) and (max-width: 1024px){
 
     h1{
@@ -550,6 +579,7 @@ h3{
     .boite_heber{
         width: 90%;
         margin: 0 0 40px 0;
+        height: 260px;
     }
     .populaire:nth-child(1){
         flex: 3;
@@ -562,7 +592,21 @@ h3{
         background-color: white;
         border-radius: 25px;
         padding:5px;
-        margin: 40px 20px 40px 20px ;
+        margin: 40px 20px 110px 20px ;
+        height: 200px;
+    }
+    .imagepop{
+        height: 200px;
+    }
+    .lespluspop{
+        margin: 0 5px 20px 5px;
+    }
+
+    .activ h4{
+        width: 130px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
