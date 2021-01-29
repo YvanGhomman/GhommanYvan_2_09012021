@@ -319,14 +319,12 @@ header, aside, .hebergement {
         border-radius: 25px;
         box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
         margin: 1em;
-
     }
     .boitesact4{
         background-color: white;
         border-radius: 25px;
         box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
         margin: 1em;
-
     }
     .boitesact1 h4, .boitesact2 h4, .boitesact3 h4, .boitesact4 h4{
         padding: 1em;
