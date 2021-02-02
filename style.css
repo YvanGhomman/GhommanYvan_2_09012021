@@ -415,10 +415,6 @@ h3{
         font-size: 15px;
         margin: 0.5em 1em;
     }
-    .navig:hover {
-        border-bottom: 3px solid #0065FC;
-        border-top: 0;
-    }
     ul{
         padding: 0.7em;
         font-size: 15px;
@@ -433,6 +429,12 @@ h3{
     .navig{
         border-bottom: 3px solid #DEEBFF;
         border-top: 0;
+        padding: 1em 5em 2em 5em;
+    }
+    .navig:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: 0;
+        padding: 1em 5em 2em 5em;
     }
     .soustext{
         font-size: 12px;
