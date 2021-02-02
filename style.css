@@ -59,6 +59,7 @@ header, aside, .hebergement {
     }
     input{
         border: hidden;
+        padding: 18px ;
     }
     #lieu{
         width: 100%;
@@ -72,7 +73,7 @@ header, aside, .hebergement {
         border-radius: 0 10px 10px 0;
         padding: 1em;
         width: 40%;
-        height: 3.7em;
+        height: 3.8em;
     }
     .boutonloupe{
         display: none;
@@ -112,7 +113,7 @@ header, aside, .hebergement {
         margin: 15px;
         padding: 0 20px 0 0px;
         font-weight: bold;
-        height: 30px; 
+        height: 40px; 
     }
     .filtre:hover{
         color: #0065FC;
@@ -125,10 +126,13 @@ header, aside, .hebergement {
         color: #0065FC;
         margin-right: 10px;
         margin-left: -3px;
-        width: 1em;
-        height: 1em;
+        width: 20px;
+        height: 20px;
     }
-    
+    .filtre i{
+        padding: 15px 10px 10px 13px;
+    }
+
     .info{
         width: 10px;
         height: 10px;
@@ -429,12 +433,12 @@ h3{
     .navig{
         border-bottom: 3px solid #DEEBFF;
         border-top: 0;
-        padding: 1em 5em 2em 5em;
+        padding: 2em;
     }
     .navig:hover {
         border-bottom: 3px solid #0065FC;
         border-top: 0;
-        padding: 1em 5em 2em 5em;
+        padding: 2em;
     }
     .soustext{
         font-size: 12px;
@@ -443,6 +447,9 @@ h3{
         width: 100%;
         height: 40px;
         margin: 1em -0.5em 0 -0.5em;
+    }
+    input{
+        padding: 14px ;
     }
     .boutonloupe{
         display: block;
@@ -530,7 +537,7 @@ h3{
         flex-direction: column;;
     }
     .boitesact1{  
-        width: 93.3%;
+        width: fit-content;
     }
     .toutactivites img{
         height: 100px;
@@ -546,6 +553,8 @@ h3{
     }
     .dispo1, .dispo2{
         width: 100%;
+        padding: 0;
+        margin: 0;
     } 
 
         
