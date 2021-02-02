@@ -50,7 +50,7 @@ header, aside, .hebergement {
         display: flex;
         border: solid  #F2F2F2 1px;
         border-radius: 10px 10px;
-        width: fit-content;
+        width: 50%;
     }
     .zonerecherche{
         width: 100%;
@@ -108,10 +108,11 @@ header, aside, .hebergement {
         align-items: center;
         border: solid #F2F2F2 3px;
         border-radius: 50px;
-        width:fit-content;
+        width: fit-content;
         margin: 15px;
-        padding: 0 20px 0 0;
-        font-weight: bold; 
+        padding: 0 20px 0 0px;
+        font-weight: bold;
+        height: 30px; 
     }
     .filtre:hover{
         color: #0065FC;
@@ -123,6 +124,7 @@ header, aside, .hebergement {
         border-radius: 50px ;
         color: #0065FC;
         margin-right: 10px;
+        margin-left: -3px;
         width: 1em;
         height: 1em;
     }
@@ -518,15 +520,15 @@ h3{
         width: fit-content;
     }
     .boite_heber{
-        width: fit-content;
+        width: 96%;
         margin: 0 0 20px 0
     }
 
     .toutactivites {
         flex-direction: column;;
     }
-    .dispo1, .dispo2, .boitesact1{  
-        width: fit-content;
+    .boitesact1{  
+        width: 95%;
     }
     .toutactivites img{
         height: 100px;
@@ -540,6 +542,11 @@ h3{
     #activités{
         margin-left: 1em;
     }
+    .dispo1, .dispo2{
+        width: 99%;
+    } 
+
+        
 
     footer{
         flex-direction: column;
