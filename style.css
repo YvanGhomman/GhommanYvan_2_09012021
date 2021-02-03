@@ -419,26 +419,31 @@ h3{
         font-size: 15px;
         margin: 0.5em 1em;
     }
+
     ul{
-        padding: 0.7em;
+        padding: 0em;
         font-size: 15px;
-        margin: 2em 0em;
-        padding: 0;
+        margin: -0.2em;
+        border-bottom: #DEEBFF;
+        width: 100%;
         }
     nav{
         text-align: center;
         justify-content: center;
         padding: 0em;
+        width: 100%;
     }
-    .navig{
-        border-bottom: 3px solid #DEEBFF;
-        border-top: 0;
-        padding: 2em;
+    li{
+        width: 50%;
+        text-align: center;
+        padding: 2em 0 2.3em 0;   
+    }
+    li:hover{
+        border-bottom: 3px solid #0065FC;
+        padding: 2em 0; 
     }
     .navig:hover {
-        border-bottom: 3px solid #0065FC;
         border-top: 0;
-        padding: 2em;
     }
     .soustext{
         font-size: 12px;
