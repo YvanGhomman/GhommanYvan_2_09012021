@@ -206,7 +206,7 @@ body {
                 margin: 20px 20px 0 10px;
                 }
                 .textpop p{
-                    padding: 0.5em 0 3em 0;
+                    padding: 0.5em 0 6em 0;
                     margin: 0;
                     font-size: 13px;
                 }
@@ -376,7 +376,7 @@ footer {
         }
 
 
-/* MEDIA QUERIES PORTABLE & TABLETTE PORTRAIT*/
+/* MEDIA QUERIES MOBILE*/
 @media all and (max-width: 767px){
     .entete{
         position: relative;
@@ -469,10 +469,12 @@ footer {
     #popheber {
         flex-direction: column;
         font-size: 10px;
+        margin: 0;
     }
         .populaire {
             border-radius: 0px;
             margin: 0em;
+            padding: 2em;
         }
             .lespluspop h2, .lespluspop i{
                 font-size: 20px;
@@ -487,6 +489,9 @@ footer {
                 }
                     .imagepop{
                         height: 150px;
+                    }
+                    .textpop p{
+                        padding-bottom: 4.5em ;
                     }
                         h4{
                             font-size: 12px;
@@ -553,14 +558,20 @@ footer {
 }
 
 
-/*TABLETTE PAYSAGE & LAPTOP*/
+/*TABLETTE*/
 
 @media all and (min-width:768px) and (max-width: 1024px){
     h1{
          font-size: 25px;
      }
-    .populaire:nth-child(1){
-        flex: 3;
+    #popheber {
+        flex-direction: column;
+    }
+    .populaire{
+        margin-bottom: 3em;
+    }
+    .populaire h2{
+        font-size: 22px;
     }
         .lespluspop{
             margin: 0 5px 20px 5px;
@@ -570,17 +581,24 @@ footer {
                 background-color: white;
                 border-radius: 25px;
                 padding:5px;
-                margin: 40px 20px 110px 20px ;
+                margin: 40px 20px;
                 height: 200px;
             }
                 .imagepop{
                     height: 200px;
                 }
+                .textpop p{
+                    padding-bottom: 6.5em ;
+                    font-size: 16px ;
+                }
+                .textpop h4{
+                    font-size: 18px;
+                }
     .hebergement{
         padding: 1em;
     }
-    .hebergement:nth-child(2){
-        flex: 5;
+    .hebergement h2{
+        font-size: 22px;
     }
         .bloclignes{
             display: flex;
@@ -596,11 +614,41 @@ footer {
                     margin: 0 0 40px 0;
                     height: 260px;
                 }
+                .text_heber p{
+                    font-size: 16px;
+                    padding-bottom: 1.3em;
+                }
+                .text_heber h4{
+                    font-size: 18px;
+                }
     .activ h4{
         width: 130px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+    }
+    .activ h2{
+        font-size: 22px;
+    }
+}
+
+
+/*LAPTOP*/
+
+@media all and (min-width:1025px) and (max-width: 1388px){
+
+    .textpop h4, .text_heber h4{
+        width: 120px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .textpop p{
+        font-size: 12px;
+        padding-bottom: 7.5em;
+    }
+    .text_heber p{
+        font-size: 12px;
     }
 }
 
