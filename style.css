@@ -376,7 +376,7 @@ footer {
         }
 
 
-/* MEDIA QUERIES MOBILE*/
+/* MEDIA QUERIES MOBILE ET TABLETTE PORTRAIT*/
 @media all and (max-width: 767px){
     .entete{
         position: relative;
@@ -558,7 +558,7 @@ footer {
 }
 
 
-/*TABLETTE*/
+/*TABLETTE PAYSAGE*/
 
 @media all and (min-width:768px) and (max-width: 1024px){
     h1{
