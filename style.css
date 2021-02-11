@@ -195,9 +195,10 @@ body {
                 padding:5px;
                 margin: 0px 20px 40px 20px ;
                 box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
+                min-width: 350px;
             }
                 .imagepop{
-                    width: 35%;
+                    width: 10em;
                     height: 11em;
                     border-radius : 25px 0px 0px 25px;
                     object-fit: cover; 
@@ -246,17 +247,19 @@ body {
             .ligne{
                 display: flex;
                 justify-content: space-around;
+                width: 100%;
             }
                 .boite_heber{
                     background-color: white;
                     border-radius: 25px;
                     padding: 5px;
-                    width: 30%;
-                    margin: 0px 20px 40px 20px ;
+                    width: fit-content;
+                    margin: 0px 10px 40px 10px ;
                     box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
                 }
                     .image_heber{
-                        width: 100%;
+                    
+                        width: 20em;
                         height: 9.6em;
                         border-radius : 25px 25px 0 0;
                         object-fit: cover;
@@ -377,7 +380,15 @@ footer {
 
 
 /* MEDIA QUERIES MOBILE ET TABLETTE PORTRAIT*/
-@media all and (max-width: 767px){
+
+@media all and (max-width: 375px){
+    .image_heber{                  
+        width: 33em !important;
+    }
+
+}
+
+@media all and (max-width: 799px){
     .entete{
         position: relative;
         display: block;
@@ -486,9 +497,11 @@ footer {
                 .boitepop{
                     margin: 0 0 2em 0;
                     height: 150px;
+                    min-width: 96%;
                 }
                     .imagepop{
                         height: 150px;
+                        width: 10em;
                     }
                     .textpop p{
                         padding-bottom: 4.5em ;
@@ -503,6 +516,7 @@ footer {
             background-color: white;
             border-radius: 0px;
             margin: 0em;
+            width: 91%;
         }
             #hébergements{
                 padding-left: 0;
@@ -513,8 +527,11 @@ footer {
                     width: fit-content;
                 }
                     .boite_heber{
-                        width: 96%;
-                        margin: 0 0 20px 0
+                        width: fit-content;
+                        margin: 0 0 20px 0;
+                    }
+                    .image_heber{
+                        width: 33em;
                     }
                 #afficher{
                     font-size: 12px;
@@ -560,7 +577,7 @@ footer {
 
 /*TABLETTE PAYSAGE*/
 
-@media all and (min-width:768px) and (max-width: 1024px){
+@media all and (min-width:800px) and (max-width: 1024px){
     h1{
          font-size: 25px;
      }
@@ -595,7 +612,7 @@ footer {
                     font-size: 18px;
                 }
     .hebergement{
-        padding: 1em;
+        padding: 2em;
     }
     .hebergement h2{
         font-size: 22px;
@@ -607,13 +624,14 @@ footer {
             .ligne{
                 flex-direction: column;
                 width: 100%;
-                margin: 1em;
             }
                 .boite_heber{
-                    width: 90%;
-                    margin: 0 0 40px 0;
+                    width: fit-content;
                     height: 260px;
                 }
+                    .image_heber{
+                        width: 20em;
+                    }
                 .text_heber p{
                     font-size: 16px;
                     padding-bottom: 1.3em;
@@ -632,8 +650,67 @@ footer {
     }
 }
 
+@media all and (min-width:1025px) and (max-width: 1145px){
+    .hebergement{
+        padding: 1em;
+        }
+        .text_heber h4{
+            width: 90px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .text_heber p{
+            font-size: 10px;
+        }
+        .image_heber{                  
+            width: 9em;
+        }
+        .textpop h4 {
+            width: 90px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .textpop p{
+            font-size: 12px;
+            padding-bottom: 7.5em;
+        }
+        .boitepop{
+            min-width: 305px;
+        }
+}
 
-/*LAPTOP*/
+
+@media all and (min-width:1146px) and (max-width: 1385px){
+
+    .text_heber h4{
+        width: 120px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .image_heber{                  
+        width: 10em;
+    }
+}
+
+@media all and (min-width:1386px) and (max-width: 1535px){
+
+    .image_heber{                  
+        width: 15em;
+    }
+}
+
+@media all and (min-width:1536px) and (max-width: 1625px){
+
+.image_heber{                  
+    width: 18em;
+}
+}
+
+/*
+LAPTOP
 
 @media all and (min-width:1025px) and (max-width: 1388px){
 
@@ -650,5 +727,5 @@ footer {
     .text_heber p{
         font-size: 12px;
     }
-}
+} */
 
