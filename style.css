@@ -101,7 +101,7 @@ body {
         align-items: center;
         flex-wrap: wrap;
     }
-        #motfiltres{
+        .motfiltres{
             margin-right: 15px;
             font-size: 17px;
         }
@@ -182,7 +182,7 @@ body {
                 justify-content: space-between;
                 margin: 20px 20px 0px 20px;
             }
-            h2{
+            h3{
                 font-size: 19px;
             }
             .fa-chart-line{
@@ -192,7 +192,7 @@ body {
                 display: flex;
                 background-color: white;
                 border-radius: 25px;
-                padding:5px;
+                padding:05px;
                 margin: 0px 20px 40px 20px ;
                 box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
                 min-width: 350px;
@@ -258,7 +258,6 @@ body {
                     box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
                 }
                     .image_heber{
-                    
                         width: 20em;
                         height: 9.6em;
                         border-radius : 25px 25px 0 0;
@@ -296,66 +295,72 @@ body {
             display: flex;
             justify-content: center;
             justify-items: center;
+            margin: 1em;
         }
-            .boitesact1{
-                background-color: white;
-                border-radius: 25px;
-                box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
-                margin: 1em;
-                width: 45%;
-            }
-                .img1{
-                    border-radius: 25px 25px 0 0 ;
-                    width: 100%;
-                    height: 340px;
-                    object-fit: cover;
-                }
-            .dispo1{
+            .blocde3_1{
                 display: flex;
-                flex-direction: column;
-                width: 50%;
             }
-                .boitesact3{
+                .boitesact1{
                     background-color: white;
                     border-radius: 25px;
                     box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
                     margin: 1em;
+                    width: fit-content;
                 }
-                    .imgfort{
+                    .img1{
                         border-radius: 25px 25px 0 0 ;
-                        width: 100%;
-                        height: 160px;
+                        width: 370px;
+                        height: 440px;
                         object-fit: cover;
                     }
-                    .imgiles{
-                        border-radius: 25px 25px 0 0 ;
-                        width: 100%;
-                        height: 100px;
-                        object-fit: cover;
-                    }
-            .dispo2{
-                display: flex;
-                flex-direction: column;
-                width: 50%;
-            }
-                .boitesact2{
-                    background-color: white;
-                    border-radius: 25px;
-                    box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
-                    margin: 1em;
+                .dispo1{
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
                 }
-                    .imgnotre{
-                        border-radius: 25px 25px 0 0 ;
-                        width: 100%;
-                        height: 130px;
-                        object-fit: cover;
+                    .boitesact3{
+                        background-color: white;
+                        border-radius: 25px;
+                        box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
+                        margin: 1em;
+                        width: fit-content;
                     }
-                    .imgparc{
-                        border-radius: 25px 25px 0 0 ;
-                        width: 100%;
-                        height: 130px;
-                        object-fit: cover;
+                        .imgfort{
+                            border-radius: 25px 25px 0 0 ;
+                            width: 370px;
+                            height: 220px;
+                            object-fit: cover;
+                        }
+                        .imgiles{
+                            border-radius: 25px 25px 0 0 ;
+                            width: 370px;
+                            height: 140px;
+                            object-fit: cover;
+                        }
+                .dispo2{
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                }
+                    .boitesact2{
+                        background-color: white;
+                        border-radius: 25px;
+                        box-shadow: 2px 2px 15px rgba(150, 149, 149, 0.575);
+                        margin: 1em;
+                        width: fit-content;
                     }
+                        .imgnotre{
+                            border-radius: 25px 25px 0 0 ;
+                            width: 370px;
+                            height: 180px;
+                            object-fit: cover;
+                        }
+                        .imgparc{
+                            border-radius: 25px 25px 0 0 ;
+                            width: 370px;
+                            height: 180px;
+                            object-fit: cover;
+                        }
                 .boitesact1 h4, .boitesact2 h4, .boitesact3 h4, .boitesact4 h4{
                     padding: 1em;
                 }
@@ -374,18 +379,693 @@ footer {
         width: 15em;
         font-size: 14px;
     }
-        h3{
+    .motfiltres{
             font-size: 17px;
         }
 
 
-/* MEDIA QUERIES MOBILE ET TABLETTE PORTRAIT*/
 
-@media all and (max-width: 375px){
-    .image_heber{                  
-        width: 33em !important;
+/* MEDIA QUERIES */
+
+/*MOBILE*/
+@media all and (max-width: 319px){
+    #popheber {
+        flex-direction: column;
+        font-size: 10px;
+        margin: 0;
     }
+        .populaire {
+            border-radius: 0px;
+            margin: 0em;
+            padding: 2em;
+        }
+            .lespluspop h3, .lespluspop i{
+                font-size: 18px;
+                padding-bottom: 1em;
+            }
+            .lespluspop{
+                margin-left: 1em;
+            }
+                .boitepop{
+                    margin: 0 0 2em 0;
+                    height: 150px;
+                    min-width: 96%;
+                }
+                    .imagepop{
+                        height: 150px;
+                        width: 10em;
+                    }
+                    .textpop p{
+                        padding-bottom: 2.5em ;
+                        font-size: 12px;
+                    }
+                    .textpop h4{
+                            font-size: 13px;
+                        } 
+        .hebergement h3{
+            font-size: 18px;
+        }
+        .hebergement{
+            background-color: white;
+            border-radius: 0px;
+            margin: 0em;
+        }
+            #hébergements{
+                padding-left: 0;
+                padding-bottom: 1em;
+            }
+            .bloclignes{
+                display: flex;
+                flex-wrap: wrap;
+                width: fit-content;
+                justify-content: center;
+            }
+                .ligne{
+                    flex-direction: column;
+                    width: fit-content;
 
+                }
+                    .boite_heber{
+                        width: fit-content;
+                        margin: 0 0 20px 0;
+
+                    }
+                    .text_heber p{
+                        font-size: 12px;
+                    }
+                    .text_heber h4{
+                        font-size: 13px;
+                    }
+                    .image_heber{
+                        width: 235px;
+                        height: 116px;
+                    }
+                #afficher{
+                    font-size: 13px;
+                }
+    .blocde3_1{
+        display: block;
+        width: 280px;
+    }
+    .activ h3{
+        font-size: 18px;
+    }
+    #activités{
+        margin-left: 1em;
+    }
+    .toutactivites {
+        flex-direction: column;
+        align-items: center;
+    }
+    .toutactivites img{
+        height: 110px;
+        width: 250px;
+    }
+    .toutactivites h4{
+        font-size: 13px;
+    }
+        .boitesact1{  
+            width: fit-content;
+        }  
+        .dispo1, .dispo2{
+            width: 280px;
+            padding: 0;
+            margin: 0;
+        }
+            .boitesact2, .boitesact3{
+                width: fit-content;
+            } 
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+        .boxfoot{
+            width: 10em;
+        }
+        .boxfoot p{
+            font-size: 12px;
+        }
+}
+
+/*IPHONE*/
+@media all and (min-width: 320px) and (max-width: 375px){
+    #popheber {
+        flex-direction: column;
+        font-size: 10px;
+        margin: 0;
+    }
+        .populaire {
+            border-radius: 0px;
+            margin: 0em;
+            padding: 2em;
+        }
+            .lespluspop h3, .lespluspop i{
+                font-size: 20px;
+                padding-bottom: 1em;
+            }
+            .lespluspop{
+                margin-left: 1em;
+            }
+                .boitepop{
+                    margin: 0 0 2em 0;
+                    height: 150px;
+                    min-width: 96%;
+                }
+                    .imagepop{
+                        height: 150px;
+                        width: 10em;
+                    }
+                    .textpop p{
+                        padding-bottom: 2.5em ;
+                        font-size: 13px;
+                    }
+                    .textpop h4{
+                            font-size: 16px;
+                        } 
+        .hebergement h3{
+            font-size: 20px;
+        }
+        .hebergement{
+            background-color: white;
+            border-radius: 0px;
+            margin: 0em;
+        }
+            #hébergements{
+                padding-left: 0;
+                padding-bottom: 1em;
+            }
+            .bloclignes{
+                display: flex;
+                flex-wrap: wrap;
+                width: fit-content;
+                justify-content: center;
+            }
+                .ligne{
+                    flex-direction: column;
+                    width: fit-content;
+
+                }
+                    .boite_heber{
+                        width: fit-content;
+                        margin: 0 0 20px 0;
+
+                    }
+                    .text_heber p{
+                        font-size: 13px;
+                    }
+                    .text_heber h4{
+                        font-size: 16px;
+                    }
+                    .image_heber{
+                        width: 270px;
+                        height: 133px;
+                    }
+                #afficher{
+                    font-size: 16px;
+                }
+    .blocde3_1{
+        display: block;
+        width: 320px;
+    }
+    .activ h3{
+        font-size: 20px;
+    }
+    #activités{
+        margin-left: 1em;
+    }
+    .toutactivites {
+        flex-direction: column;
+        align-items: center;
+    }
+    .toutactivites img{
+        height: 130px;
+        width: 290px;
+    }
+    .toutactivites h4{
+        font-size: 13px;
+    }
+        .boitesact1{  
+            width: fit-content;
+        }  
+        .dispo1, .dispo2{
+            width: 320px;
+            padding: 0;
+            margin: 0;
+        }
+            .boitesact2, .boitesact3{
+                width: fit-content;
+            } 
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+        .boxfoot{
+            width: 10em;
+        }
+        .boxfoot p{
+            font-size: 12px;
+        }
+}
+
+/*FIN MOBILE*/
+@media all and (min-width: 375px) and (max-width: 424px){
+    #popheber {
+        flex-direction: column;
+        font-size: 10px;
+        margin: 0;
+    }
+        .populaire {
+            border-radius: 0px;
+            margin: 0em;
+            padding: 2em;
+        }
+            .lespluspop h3, .lespluspop i{
+                font-size: 20px;
+                padding-bottom: 1em;
+            }
+            .lespluspop{
+                margin-left: 1em;
+            }
+                .boitepop{
+                    margin: 0 0 2em 0;
+                    height: 150px;
+                    min-width: 96%;
+                }
+                    .imagepop{
+                        height: 150px;
+                        width: 10em;
+                    }
+                    .textpop p{
+                        padding-bottom: 2.5em ;
+                        font-size: 15px;
+                    }
+                    .textpop h4{
+                            font-size: 18px;
+                        } 
+        .hebergement h3{
+            font-size: 20px;
+        }
+        .hebergement{
+            background-color: white;
+            border-radius: 0px;
+            margin: 0em;
+        }
+            #hébergements{
+                padding-left: 0;
+                padding-bottom: 1em;
+            }
+            .bloclignes{
+                display: flex;
+                flex-wrap: wrap;
+                width: fit-content;
+                justify-content: center;
+            }
+                .ligne{
+                    flex-direction: column;
+                    width: fit-content;
+
+                }
+                    .boite_heber{
+                        width: fit-content;
+                        margin: 0 0 20px 0;
+
+                    }
+                    .text_heber p{
+                        font-size: 15px;
+                    }
+                    .text_heber h4{
+                        font-size: 18px;
+                    }
+                    .image_heber{
+                        width: 33em;
+                        height: 160px;
+                    }
+                #afficher{
+                    font-size: 18px;
+                }
+    .blocde3_1{
+        display: block;
+        width: fit-content;
+    }
+    .activ h3{
+        font-size: 20px;
+    }
+    #activités{
+        margin-left: 1em;
+    }
+    .toutactivites {
+        flex-direction: column;
+        align-items: center;
+    }
+    .toutactivites img{
+        height: 160px;
+        width: 340px;
+    }
+    .toutactivites h4{
+        font-size: 15px;
+    }
+        .boitesact1{  
+            width: fit-content;
+        }  
+        .dispo1, .dispo2{
+            width: fit-content;
+            padding: 0;
+            margin: 0;
+        }
+            .boitesact2, .boitesact3{
+                width: fit-content;
+            } 
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+        .boxfoot{
+            width: 10em;
+        }
+        .boxfoot p{
+            font-size: 12px;
+        }
+}    
+/*TABLETTE*/
+@media all and (min-width:425px) and (max-width: 539px){
+    #popheber {
+        flex-direction: column;
+        font-size: 10px;
+        margin: 0;
+    }
+        .populaire {
+            border-radius: 0px;
+            margin: 0em;
+            padding: 2em;
+        }
+            .lespluspop h3, .lespluspop i{
+                font-size: 20px;
+                padding-bottom: 1em;
+            }
+            .lespluspop{
+                margin-left: 1em;
+            }
+                .boitepop{
+                    margin: 0 0 2em 0;
+                    height: 150px;
+                    min-width: 96%;
+                }
+                    .imagepop{
+                        height: 150px;
+                        width: 10em;
+                    }
+                    .textpop p{
+                        padding-bottom: 2.5em ;
+                        font-size: 15px;
+                    }
+                    .textpop h4{
+                            font-size: 18px;
+                        } 
+        .hebergement h3{
+            font-size: 20px;
+        }
+        .hebergement{
+            background-color: white;
+            border-radius: 0px;
+            margin: 0em;
+        }
+            #hébergements{
+                padding-left: 0;
+                padding-bottom: 1em;
+            }
+            .bloclignes{
+                display: flex;
+                flex-wrap: wrap;
+                width: fit-content;
+                justify-content: center;
+            }
+                .ligne{
+                    flex-direction: column;
+                    width: fit-content;
+                }
+                    .boite_heber{
+                        width: fit-content;
+                        margin: 0 0 20px 0;
+
+                    }
+                    .image_heber{
+                        width: 38em;
+                        height: 185px;
+                    }
+                    .text_heber p{
+                        font-size: 15px;
+                    }
+                    .text_heber h4{
+                        font-size: 18px;
+                    }
+                #afficher{
+                    font-size: 18px;
+                }
+    .blocde3_1{
+        display: block;
+        width: 425px;
+    }
+    .activ h3{
+        font-size: 20px;
+    }
+    #activités{
+        margin-left: 1em;
+    }
+    .toutactivites {
+        flex-direction: column;
+        align-items: center;
+    }
+    .toutactivites img{
+        height: 180px;
+        width: 400px;
+    }
+    .toutactivites h4{
+        font-size: 15px;
+    }
+        .boitesact1{  
+            width: fit-content;
+        }  
+        .dispo1, .dispo2{
+            width: 425px;
+            padding: 0;
+            margin: 0;
+        }
+            .boitesact2, .boitesact3{
+                width: fit-content;
+            } 
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+        .boxfoot{
+            width: 10em;
+        }
+        .boxfoot p{
+            font-size: 12px;
+        }
+}
+
+
+@media all and (min-width: 540px) and (max-width: 629px){
+    #popheber {
+        flex-direction: column;
+    }
+    .populaire{
+        margin-bottom: 3em;
+    }
+    .populaire h3{
+        font-size: 22px;
+    }
+        .lespluspop{
+            margin: 0 5px 20px 5px;
+        }
+            .boitepop{
+                display: flex;
+                background-color: white;
+                border-radius: 25px;
+                padding:5px;
+                margin: 40px 20px;
+                height: 200px;
+            }
+                .imagepop{
+                    height: 200px;
+                }
+                .textpop p{
+                    padding-bottom: 5.5em ;
+                    font-size: 14px ;
+                }
+                .textpop h4{
+                    font-size: 17px;
+                }
+    .hebergement{
+        padding: 0em;
+    }
+    .hebergement h3{
+        font-size: 22px;
+    }
+        .bloclignes{
+            display: flex;
+            padding-left: 0em;
+        }
+            .ligne{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+                .boite_heber{
+                    width: fit-content;
+                    height: 190px;
+                }
+                    .image_heber{
+                        width: 13em;
+                        height: 6.4em;
+                    }
+                .text_heber p{
+                    font-size: 13px;
+                    padding-bottom: 1.3em;
+                }
+                .text_heber h4{
+                    font-size: 15px;
+                }
+    .toutactivites{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .activ h3{
+        font-size: 22px;
+    }
+    .img1{
+        width: 230px;
+        height: 280px;
+    }
+        .imgfort{
+            width: 230px;
+            height: 110px;
+        }
+        .imgiles{
+            width: 230px;
+            height: 90px;
+        }
+        .imgnotre{
+            width: 230px;
+            height: 100px;
+        }
+        .imgparc{
+            width: 230px;
+            height: 100px;
+        }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+        .boxfoot{
+            width: 10em;
+        }
+        .boxfoot p{
+            font-size: 12px;
+        }
+
+}
+
+/*IPAD*/
+@media all and (min-width: 630px) and (max-width: 799px){
+    #popheber {
+        flex-direction: column;
+    }
+    .populaire{
+        margin-bottom: 3em;
+    }
+    .populaire h3{
+        font-size: 22px;
+    }
+        .lespluspop{
+            margin: 0 5px 20px 5px;
+        }
+            .boitepop{
+                display: flex;
+                background-color: white;
+                border-radius: 25px;
+                padding:5px;
+                margin: 40px 20px;
+                height: 200px;
+            }
+                .imagepop{
+                    height: 200px;
+                }
+                .textpop p{
+                    padding-bottom: 6.5em ;
+                    font-size: 16px ;
+                }
+                .textpop h4{
+                    font-size: 18px;
+                }
+    .hebergement{
+        padding: 0em;
+    }
+    .hebergement h3{
+        font-size: 22px;
+    }
+        .bloclignes{
+            display: flex;
+            padding-left: 0em;
+        }
+            .ligne{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+                .boite_heber{
+                    width: fit-content;
+                    height: 220px;
+                }
+                    .image_heber{
+                        width: 15em;
+                        height: 7.5em;
+                    }
+                .text_heber p{
+                    font-size: 16px;
+                    padding-bottom: 1.3em;
+                }
+                .text_heber h4{
+                    font-size: 18px;
+                }
+    .toutactivites{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .activ h3{
+        font-size: 22px;
+    }
+    .img1{
+        width: 260px;
+        height: 320px;
+    }
+        .imgfort{
+            width: 260px;
+            height: 150px;
+        }
+        .imgiles{
+            width: 260px;
+            height: 90px;
+        }
+        .imgnotre{
+            width: 260px;
+            height: 120px;
+        }
+        .imgparc{
+            width: 260px;
+            height: 120px;
+        }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+        .boxfoot{
+            width: 10em;
+        }
+        .boxfoot p{
+            font-size: 12px;
+        }
 }
 
 @media all and (max-width: 799px){
@@ -463,12 +1143,10 @@ footer {
     .filtres{
         margin: 0 -2em 0 -2em;
     }
-        h3{
-            font-size: 15px;
-        }
-        #motfiltres{
+        .motfiltres{
             font-size: 16px;
             margin: 1em 1em 1em 1em;
+            font-size: 15px;
         }
         .filtreligne{
             flex-wrap:wrap ;
@@ -477,106 +1155,9 @@ footer {
                 margin: 10px;
                 font-size: 12px;
             } 
-    #popheber {
-        flex-direction: column;
-        font-size: 10px;
-        margin: 0;
-    }
-        .populaire {
-            border-radius: 0px;
-            margin: 0em;
-            padding: 2em;
-        }
-            .lespluspop h2, .lespluspop i{
-                font-size: 20px;
-                padding-bottom: 1em;
-            }
-            .lespluspop{
-                margin-left: 1em;
-            }
-                .boitepop{
-                    margin: 0 0 2em 0;
-                    height: 150px;
-                    min-width: 96%;
-                }
-                    .imagepop{
-                        height: 150px;
-                        width: 10em;
-                    }
-                    .textpop p{
-                        padding-bottom: 4.5em ;
-                    }
-                        h4{
-                            font-size: 12px;
-                        } 
-        .hebergement h2{
-            font-size: 20px;
-        }
-        .hebergement{
-            background-color: white;
-            border-radius: 0px;
-            margin: 0em;
-            width: 91%;
-        }
-            #hébergements{
-                padding-left: 0;
-                padding-bottom: 1em;
-            }
-                .ligne{
-                    flex-direction: column;
-                    width: fit-content;
-                }
-                    .boite_heber{
-                        width: fit-content;
-                        margin: 0 0 20px 0;
-                    }
-                    .image_heber{
-                        width: 33em;
-                    }
-                #afficher{
-                    font-size: 12px;
-                }
-    .activ h2{
-        font-size: 20px;
-    }
-    #activités{
-        margin-left: 1em;
-    }
-    .toutactivites {
-        flex-direction: column;;
-    }
-    .toutactivites img{
-        height: 100px;
-    }
-    .toutactivites h4{
-        font-size: 12px;
-    }
-        .boitesact1{  
-            width: 92%;
-        }  
-        .dispo1, .dispo2{
-            width: 92%;
-            padding: 0;
-            margin: 0;
-        }
-            .boitesact2, .boitesact3{
-                width: 100%;
-            } 
-    footer{
-        flex-direction: column;
-        padding-left: 2.5em;
-    }
-        .boxfoot{
-            width: 10em;
-        }
-        .boxfoot p{
-            font-size: 12px;
-        }
 }
 
-
-/*TABLETTE PAYSAGE*/
-
+/*IPAD PRO*/
 @media all and (min-width:800px) and (max-width: 1024px){
     h1{
          font-size: 25px;
@@ -587,7 +1168,7 @@ footer {
     .populaire{
         margin-bottom: 3em;
     }
-    .populaire h2{
+    .populaire h3{
         font-size: 22px;
     }
         .lespluspop{
@@ -612,18 +1193,19 @@ footer {
                     font-size: 18px;
                 }
     .hebergement{
-        padding: 2em;
+        padding: 1em;
     }
-    .hebergement h2{
+    .hebergement h3{
         font-size: 22px;
     }
         .bloclignes{
             display: flex;
-            padding-left: 0.5em;
+            padding-left: 0em;
         }
             .ligne{
                 flex-direction: column;
                 width: 100%;
+                align-items: center;
             }
                 .boite_heber{
                     width: fit-content;
@@ -631,6 +1213,7 @@ footer {
                 }
                     .image_heber{
                         width: 20em;
+                        height: 9.7em;
                     }
                 .text_heber p{
                     font-size: 16px;
@@ -639,92 +1222,213 @@ footer {
                 .text_heber h4{
                     font-size: 18px;
                 }
-    .activ h4{
-        width: 130px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+    .toutactivites{
+        display: flex;
+        flex-wrap: wrap;
     }
-    .activ h2{
+    .activ h3{
         font-size: 22px;
     }
+    .img1{
+        width: 350px;
+        height: 400px;
+    }
+        .imgfort{
+            width: 350px;
+            height: 180px;
+        }
+        .imgiles{
+            width: 350px;
+            height: 140px;
+        }
+        .imgnotre{
+            width: 350px;
+            height: 160px;
+        }
+        .imgparc{
+            width: 350px;
+            height: 160px;
+        }
 }
 
+/*LAPTOP*/
 @media all and (min-width:1025px) and (max-width: 1145px){
+    .populaire{
+        width: 360px;
+        padding: 0 0px 0 0px;
+    }  
+    .boitepop{
+        height: 6em ;
+        margin: 0px 20px 30px 20px ;
+        min-width: 250px;
+    }
+        .imagepop{
+            width: 5em;
+            height: 6em;
+        }
     .hebergement{
         padding: 1em;
         }
-        .text_heber h4{
-            width: 90px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+        .boite_heber{
+            width: 176px;
         }
         .text_heber p{
             font-size: 10px;
         }
         .image_heber{                  
-            width: 9em;
+            width: 11em;
+            height: 4.4em;
         }
         .textpop h4 {
-            width: 90px;
+            width: 140px;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
         }
         .textpop p{
             font-size: 12px;
-            padding-bottom: 7.5em;
+            padding-bottom: 0em;
         }
-        .boitepop{
-            min-width: 305px;
+
+        .img1{
+            width: 220px;
+            height: 300px;
+        }
+            .imgfort{
+                width: 220px;
+                height: 120px;
+            }
+            .imgiles{
+                width: 220px;
+                height: 100px;
+            }
+            .imgnotre{
+                width: 220px;
+                height: 110px;
+            }
+            .imgparc{
+                width: 220px;
+                height: 110px;
+            }
+        .activ h4{
+            width: 190px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 }
 
 
 @media all and (min-width:1146px) and (max-width: 1385px){
-
-    .text_heber h4{
-        width: 120px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+.populaire{
+    width: 360px;
+    padding: 0 5px 0 5px;
+}
+    .boitepop{
+        height: 7em ;
+        margin: 0 0 20px 0;
     }
+        .textpop p{
+            padding: 0.5em 0 1.5em 0;
+        }
+        .imagepop{
+            width: 6em;
+            height: 7em;
+        }
+.hebergement{
+    padding: 20px 0px 20px 0px;
+}
     .image_heber{                  
-        width: 10em;
+        width: 12.6em;
+        height: 5em;
     }
+
+    .img1{
+        width: 250px;
+        height: 300px;
+    }
+        .imgfort{
+            width: 250px;
+            height: 120px;
+        }
+        .imgiles{
+            width: 250px;
+            height: 100px;
+        }
+        .imgnotre{
+            width: 250px;
+            height: 110px;
+        }
+        .imgparc{
+            width: 250px;
+            height: 110px;
+        }
 }
 
 @media all and (min-width:1386px) and (max-width: 1535px){
 
+    .boitepop{
+        height: 9em ;
+    }
+        .textpop p{
+            padding: 0.5em 0 4em 0;
+    
+        }
+        .imagepop{
+            width: 8em;
+            height: 9em;
+        }
     .image_heber{                  
         width: 15em;
+        height: 7em;
     }
+    .img1{
+        width: 310px;
+    }
+        .imgfort{
+            width: 310px;
+        }
+        .imgiles{
+            width: 310px;
+        }
+        .imgnotre{
+            width: 310px;
+        }
+        .imgparc{
+            width: 310px;
+        }
 }
 
 @media all and (min-width:1536px) and (max-width: 1625px){
+.boitepop{
+    height: 10em ;
+}
+    .textpop p{
+        padding: 0.5em 0 5em 0;
 
+    }
+    .imagepop{
+        width: 9em;
+        height: 10em;
+    }
 .image_heber{                  
     width: 18em;
+    height: 8.7em;
 }
+
+.img1{
+    width: 345px;
 }
-
-/*
-LAPTOP
-
-@media all and (min-width:1025px) and (max-width: 1388px){
-
-    .textpop h4, .text_heber h4{
-        width: 120px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+    .imgfort{
+        width: 345px;
     }
-    .textpop p{
-        font-size: 12px;
-        padding-bottom: 7.5em;
+    .imgiles{
+        width: 345px;
     }
-    .text_heber p{
-        font-size: 12px;
+    .imgnotre{
+        width: 345px;
     }
-} */
+    .imgparc{
+        width: 345px;
+    }
+}
